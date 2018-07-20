@@ -1,3 +1,5 @@
+import numpy
+
 class Point(object):
     def __init__(self, lat, lon, elevation=0):
         self.lat = lat
@@ -35,3 +37,4 @@ class Points(object):
         for lat in self.range(self.min_lat, self.max_lat):
             for lon in self.range(self.min_lon, self.max_lon):
                 yield self.point(lat, lon)
+
